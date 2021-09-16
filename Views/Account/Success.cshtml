@@ -1,0 +1,63 @@
+﻿<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Success</title>
+    <style>
+        button {
+            background-color: white;
+            border: 2px solid black;
+            color: green;
+            padding: 5px 10px;
+            text-align: center;
+            display: inline-block;
+            font-size: 20px;
+            margin: 10px 30px;
+            cursor: pointer;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        a:link, a:visited, a:link:active, a:visited:active {
+            text-decoration: none;
+            color: red;
+        }
+    </style>
+</head>
+<body>
+
+    <h3>Account Info</h3>
+    <table cellpadding="2" cellspacing="2" border="1">
+        <tr>
+            <td>Username</td>
+            <td>@ViewBag.account.Username</td>
+        </tr>
+        <tr>
+            <td>Password</td>
+            <td>@ViewBag.account.Password</td>
+        </tr>
+        <tr>
+            <td>Age</td>
+            <td>@ViewBag.account.Age</td>
+        </tr>
+        <tr>
+            <td>Email</td>
+            <td>@ViewBag.account.Email</td>
+        </tr>
+
+        <tr>
+            <td>Phone Number</td>
+            <td>@ViewBag.account.PhoneNumber</td>
+        </tr>
+
+    </table>
+    
+    <br>
+    <h1 style="color:red"><b>Thank you for registering!!!!</b></h1>
+
+    <button>
+        <a asp-area="" asp-controller="Transaction" asp-action="Index">
+            Go to Transactions
+        </a>
+    </button>
+    
+</body>
+</html>

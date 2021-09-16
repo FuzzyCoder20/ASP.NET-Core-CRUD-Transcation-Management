@@ -1,0 +1,133 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<html>
+<head>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <style>
+        .heading {
+            background: linear-gradient(to left, #03A1A8, #5CE1E6);
+            padding: 9px;
+            padding-bottom: 10px;
+            box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+            transition: 0.3s;
+            width: 40%;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .container {
+            display: flex;
+            align-items: center;
+            position: relative;
+            justify-content: center;
+        }
+
+        .heading-text {
+            font-weight: bold;
+            color: rgb(255, 255, 255);
+            text-shadow: 2px 2px #515151;
+            font-family: "Gill Sans Extrabold", sans-serif;
+            font-size: 25px;
+            text-align: center;
+        }
+
+
+   
+
+
+     /*   .gs {
+            border-radius: 4px;
+            background-color: #FFA500;
+            border: none;
+            color: white;
+            text-align: center;
+            font-size: 15px;
+            padding: 16px;
+            width: 150px;
+            transition: all 0.5s;
+            cursor: pointer;
+            margin: 36px;
+            font-family: Garamond, serif;
+            background-size: 200% auto;
+        }
+*/
+        .gs {
+            background-color: white;
+            border: 2px solid black;
+            color: green;
+            padding: 5px 10px;
+            text-align: center;
+            display: inline-block;
+            font-size: 20px;
+            margin: 10px 30px;
+            cursor: pointer;
+            text-decoration: none;
+            border-radius:5px;
+        }
+
+        .gc:hover {
+            box-shadow: 1px 1px #000;
+            background-color: #32CD32;
+            
+        }
+
+
+
+
+        a:link,a:visited,a:link:active,a:visited:active {
+            
+            text-decoration: none;
+            color:red;
+        }
+
+        .content {
+            color: black;
+           float:left;
+            font-family: Garamond, serif;
+            font-size: 50px;
+            text-shadow: 1px 1px 1px #001;
+            
+        }
+
+        .image{
+            float:right;
+            padding-bottom:90px;
+            }
+    </style>
+
+
+
+
+</head>
+
+<body>
+
+
+
+    <div class="content">
+        <b>  Our Transaction management system helps you to add, edit and delete transaction entries effortlessly on click!!! </b>
+    </div>
+    <button class="gs">
+        <a asp-area="" asp-controller="Transaction" asp-action="Index">
+            <b>Get  Started</b>
+        </a>
+    </button>
+   
+
+
+    <div class="image">
+        <img src="https://www.taxmann.com/post/wp-content/uploads/2021/05/man-paying-online-getting-sales-slip-receipt-laptop-terminal-flat-vector-illustration-payment-money-transaction_74855-13151.jpg" />
+    </div>
+
+
+
+
+</body>
+
+
+</html>

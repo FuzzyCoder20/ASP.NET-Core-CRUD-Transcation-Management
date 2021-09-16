@@ -1,0 +1,11 @@
+﻿@model IEnumerable<jQuery_Ajax_CRUD.Models.TransactionModel>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1 class="text-center"><i class="fas fa-rupee-sign" ></i> &nbsp;Transaction history</h1>
+
+<div id="view-all">
+    @await Html.PartialAsync("_ViewAll", Model)
+</div>

@@ -1,0 +1,188 @@
+﻿@{
+    ViewData["Title"] = "About us";
+}
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+        }
+
+        html {
+            box-sizing: border-box;
+        }
+
+        *, *:before, *:after {
+            box-sizing: inherit;
+        }
+
+        .column {
+            float: left;
+            width: 30.3%;
+            margin-bottom: 16px;
+            padding: 0 8px;
+        }
+
+        .card {
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+            margin: 8px;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            padding-bottom:10px;
+        }
+
+            .card:hover {
+                box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+            }
+
+        .about-section {
+            padding: 30px;
+            text-align: center;
+            background-image: linear-gradient(to bottom right, red, yellow);
+            color: white;
+        }
+
+        .container {
+            padding: 0 16px;
+            text-align: center;
+            font-family: serif;
+        }
+
+            .container::after, .row::after {
+                content: "";
+                clear: both;
+                display: table;
+            }
+
+        .title {
+            color: grey;
+        }
+
+        .button {
+            border: none;
+            outline: 0;
+            display: inline-block;
+            padding: 8px;
+            color: white;
+            background-color: #000;
+            text-align: center;
+            cursor: pointer;
+            width: 100%;
+        }
+
+            .button:hover {
+                background-color: #555;
+            }
+
+        img {
+            height: 300px;
+            width: 200px;
+            object-fit:cover;
+        }
+
+        .wrap {
+            display: flex;
+            justify-content: center;
+            object-fit: cover;
+            margin-bottom: auto;
+            }
+       
+        
+    </style>
+</head>
+<body>
+
+    <div class="about-section">
+        <h1>About Us Page</h1>
+        <p>Details of project members are given below</p>
+    </div>
+
+    <h2 style="text-align:center">Our Team</h2>
+    <div class="row">
+        <div class="column">
+            <div class="card">
+                <div class="wrap">
+                    <img src="https://lh3.googleusercontent.com/urHf47Mc5NbNjZkw0SjWSsuUGgv5tL_hf58I81Yd2S88IZeRIIKDM7_qFvmMbOFM9IQnJYLBCxWWrZPG5tpYkSOjmJdmyDwURGDfGORk8cmSXQEtfXswGgR8oh43VY-ecQ3h9wOU7FwbVeN51fPl_Xf0oic0CVtuoruP7DrFTynp6NAAPw-_8Jr205298X7FSXBKBbPpys0VdE-fILO2lUMvvQfUB12g-HKaUlTI1yUX_gUJUqy7FY_hLBIHVAayGlwKETo4rQ_Csv-zMjU-sDHXdQAfIh9-gskegATfS1gBdwwY2KCPVb62rdtI9oF98g2_uAuhnroWeO7JKQr1pkDzebUJIKDqf-gIXcHYG1aL7qjMNOn1U0xnlPnUX-At2IQU8QAd8gWC1Lm49KXWnI5DoFXTbYmygAZSFDWNNpjQ_eWupUGryvt0IC3CAkRgiL5HK-G-2hjo__WDcWpYNM22YcdkovEnaP0XWHfrf0660l25WpS3f9684d1v43-4-6sotuNYYwCqhj4ecXxhnv-oba6r4UC91w5x-e3yyL1NY5uB55C5P5LHaPTGGO-oRK5rlpbWRi8e_V_fftVhAbjXzd7hM_kMAPZJEaiJBqSy2vD7A5VksrCLhgC0D7dHWhhfYl6WaMa-rM14nDV1Tr9q7ilwP1s7rAiuX88rGr1mBZ9vywjr3spNi0RpdCop_TZej80TWZuL0lcKJYYhWv1GVA=s328-no?authuser=0" alt="Rajeev Kaviskar">
+                </div>
+                    <div class="container">
+                    <h2>Rajeev Kaviskar</h2>
+                    <p class="title">19302C0009</p>
+                    <p>rajeev.kaviskar@vsit.edu.in</p>
+                    <p><button class="button">Contact</button></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="column">
+            <div class="card">
+                <div class="wrap">
+                    <img src="https://lh3.googleusercontent.com/s8qzuiK48awCIgN-OXy-JnwYltnvn-NdMYPtgPNppanzT5y5N3UvkaFUJXaWQe78MgtPiSTtEqr8XIzCWdnqnK34nHgxgrucBg_M4ai990gtt6kVWqQ4BApuoa3E_OmLI8rIKxBgQXat9yZ7dkNHKeqJPVvNFe75obI2ZiCpMWAwT6xsoZt5Ar5FwLjJEjj5ThciPN2cntrmx109eLekPuefd6-5G0WP_LTy-tH8L1R1URu27wlUyBpBwqTYvAgsKZmYbnF02cRAjPY5fVPtWuEzsOd1p23vRV0UjhAUo46u-zlf0NefzYbZ0I54V7g7tjzbbhXQzpufCVQUtX9meNv8JTzaE1kAMGt95WZ5jLZ37gpNa2QZ9Qf5Tcuva0Vi-34aYTMEP9LFgpgMxdP9d35zvXAKsgvYW9_KMoRqJ2mZUzwAxGAMCM6-Q9okvOuc9sWklec4EFzhBi44sLaiSic-HzAK4MuWlNslb2kgO_ray6wHfSREIvyBxDKNlT7_D7Y25SRPwWW-8utDpG5fVNIT7dWO0TZNzeHvPO-a0HcK2J9DeXf7G6nfL3KU9SjJUDZJ2i7qxg2NwypnQYTu2OFIMBWIhM21DoVfQ2mgGsPGCWb0onQkpcP77VT5DdG4COlTxc2B8U85IFnIqNyLZJp5TLr5T_otnUdbndy8W8VKyXu04Iab7csoWSQMYt8KcGUhHiYVrVpAtw2QSZogQ5cKPA=s328-no?authuser=0" alt="Rajeev Kaviskar">
+                 </div>
+                        <div class="container">
+                            <h2>Neelam Mane</h2>
+                            <p class="title">19302C0008</p>
+                            <p>neelam.mane@vsit.edu.in</p>
+                            <p><button class="button">Contact</button></p>
+                        </div>
+                    </div>
+            </div>
+
+        <div class="column">
+            <div class="card">
+
+                <div class="wrap">
+                    <img src="https://lh3.googleusercontent.com/a6j0EtN6TDfze-3d4d_pYpGRbEk00OuGSFVQuQuX5jE1Hq0JAtg3Naa098mODan2kCjRVXwRBRuzIYPJoLn0m0vo30FNQCJ1KrZXIkxKiXJhQzgLU9M3QyDInXjl4GzPO0pIRRpll3lCTyuYb3G-zmnFn5LqV-PnZI7yq5m0Lusl7hCJp-C3u8JrMyn7HarvdS5DpmecKU82E4P0Pxi-0PmJtQ4rpDLGuiBqnX4UHUyZLRQ6nl2sjfYcEKHYgCupVors53WynpTjmcHK1VEejQq3sAhuFhBO0DVj4JtF-Hk0kr8A50TWfxDklyCL2sHG96JaFb_4Cc3TgonzsDTMQ3huUzy_oElxNVQjWZY4InrQmDKKem1MJP1iWSAzlMcKB6ySUTQtx4vRlYedvQKU2NuceufikHCj6TxzI2X_k6Ocw--QDQm4vSwr57E7rDE8poA2AGT0efgl7gI7uzjXKS2yLYq-ghp-qERBiwIA3YV3RRehEjUsPqVdl7cWIcPHKvbJf0z9ozbNDOkJ_QXRC-Y0zx_o7A6-Z4sUogzUG2Ncoq5Se5xavpeqveWahTcw2MFbZkOkpbNjujHZbrw6nmReuyMh5sHadoz5KlJ7AKn_0z8frqyf3xPdEYkDrBt9YcM48J1NTlXBAmz32n1_xbAzDI3H7GLNGjyfxFwuLORe8HsJ9zApJq9kzbeAiSwldoBBRjyQcFMoGG9FKlysgKgZfw=s320-no?authuser=0" alt="Rajeev Kaviskar">
+                </div>
+                    <div class="container">
+                        <h2>Vrutti Solanki</h2>
+                        <p class="title">19302C0022</p>
+                        <p>vrutti.solanki@vsit.edu.in</p>
+                        <p><button class="button">Contact</button></p>
+                    </div>
+                </div>
+            </div>
+
+
+    </div>
+
+    <div class="row">
+        <div class="column">
+            <div class="card">
+                <div class="wrap">
+                    <img src="https://lh3.googleusercontent.com/1SvRQs-nSvdR5KURd4E4q2c7fcrcSL4rMNXtcW6dyxZUo-lxiz55Aqsq49kd4_-aAv6J-XvWFFpgWN4fWbFfkW1t3-vj2N12I2aKRj9NGVIebhuQbM9wKmsNjVFtev2g6YmLJZpXZC1o5XW-jTT1vGLWAZo_vxPlY5JoRHyPpzd4Xkixn1JKWvW8F3TNzjlO41TrS3Slf-PIKpbSQWh2DOwzuv1LpxWL7QT3q8-LqrjxnTPG5fMUeG_T3a8cjP_F9Im9IfmrsPv7IMWRSLjQ1gQ8oufioVF30vodmPR8p2gJLV7isI3MDi0FkNBNIazGbd9RT4Uqy5DZjnuYHEu9XGAy6nPEd4LjE9IYbyAoz7BbTkMcwBsIHynkzLkySpaRiW0WRhu65MhenmsggJ_2zhbTpEUwqHRMXti7M8HwS_fXjdiMpTmLRJL69_HjLpyd9AfE_A9nnXG0NkIJEsPAhGtShixBZ9qiuafu7q_aZ4-_O3nnsDSuq8rAYEqyQ-wkWUN-IOKggR2xtRGLjP9nYRMwXlCSnixSq_FVtEaSOlamoPwTqhQJVYSWdAXcrh2zq_ixw9KYgJBXNXUtWrywpKcNWOZwCvKHHY6VLrhtkLnK1htGIqqqgB_yMTnDwsBe9le7WymARqYNjan5OAVGMDcWwCapkA1fiTVUkq-U9Q37rU26Q0aSysycdOPi2OyFx-F3swRv73K11kUNCuhpl2Ae8w=w264-h315-no?authuser=0" alt="Rajeev Kaviskar">
+                </div>
+                    <div class="container">
+                        <h2>Shreyash Bugade</h2>
+                        <p class="title">19302C0015</p>
+                        <p>shreyash.bugade@vsit.edu.in</p>
+                        <p><button class="button">Contact</button></p>
+                    </div>
+                </div>
+        </div>
+
+        <div class="column">
+            <div class="card">
+                <div class="wrap">
+                    <img src="https://lh3.googleusercontent.com/m-bOGg1urhOxTHiL_5-WBYuPmdxgK38WDToeXOLGrBWhw9qqwKBCOmMbmLc0OmubqFevCqqDDIrpl9hsxgR99GPQnL8RkQ8DBEy65XOK8IZgaWpWGbPGzRnozyv3mY8Bu65sb61Vf3ieip52fMmo91NxbIZmnfNZP-M7Pj78FxW7kXDAb7Rdk7ZPutkLOISZ4ZhNURxDHy2-W29au1jlmWXYcdCaOJ2ogkiZKWWwMB2Jh3OCKgxEjMyX33_Bxh5EtIliJM3QFnCJDBAOYxIBEe3-IB6IDxc_c6USDRenzc6lXlSxE0qJE8zA3km8cx8DE5Pql85TnJBqeXn3MExseKI1Z10z06KUU39TKb_48vrmcftuh-nvm53WR3od6qOQ_TxOAjB-8284kGDU3mYli0InjsAfqbInXmigZlzvHdxTXCA4o7tfmqOnjXuYQtcUifs1JExbE8bOW65ZA9nqW7iAilW4MtO2ZjkNiIUEKmbJnHKCVDr-cfjFDytQoWZphHbhXfNGUIwj1J5YJFI-4roHR8Nl9rlzmweUd07KJjgdZPgdRmXlQfGrUtxroCFql0cBQn7adO93RE2fBgEfSUwsa2kA_y7X9dhiMqRjZR2fWEvQwH6Xjma_m1Fguuh40LjNXKly5BpvNAfmnshNZCK3mfsDtYuBrzD-GgrvTCaWdAq8sgNki1mrnQqsRTAp10U6x4iC_LXchV5cPMf1_5MEfQ=w682-h677-no?authuser=0" alt="Shruti Gaikwad">
+                  </div>
+                    <div class="container">
+                        <h2>Shruti Gaikwad</h2>
+                        <p class="title">20302C3003</p>
+                        <p>shruti.gaikwad@vsit.edu.in</p>
+                        <p><button class="button">Contact</button></p>
+                    </div>
+                </div>
+        </div>
+    </div>
+    <br />
+    <br/>
+
+</body>
+</html>
+
