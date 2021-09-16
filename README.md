@@ -1,1 +1,1 @@
-# ASP.NET_Mini_Project
+# ASP.NET Core Transaction management CRUD app
